@@ -1,0 +1,15 @@
+1)Write a PL/SQL code for find Sum of N numbers using WHILE Loop.
+
+
+DECLARE
+    num NUMBER:='&Input_Number';
+    res NUMBER:=0;
+BEGIN
+    WHILE(num>0)LOOP
+        res:=res+num;
+        num:=num-1;
+    EXIT WHEN num=0;
+    END LOOP;
+    DBMS_OUTPUT.PUT_LINE(res||' Is Total !');
+END;
+/
